@@ -1,0 +1,2678 @@
+<?xml version="1.0" ?>
+<plant>
+  <configurator address="10AA" offset="0B00" type="CentraleByme3MDb8">
+    <device address="10AA" manufacturer="002C" name="ByMeCentrale" type="00A0" version="0">
+      <properties>
+        <datapointtype mode="rw" name="SET_CLIMATE_INFO">
+          <functionproperty field_name="service_id" field_value="0" name="SET_CLIMATE_ASSOCIATED_GROUP" oi="31" pid="35"/>
+        </datapointtype>
+        <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+          <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="31" pid="34"/>
+          <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="31" pid="34"/>
+          <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="31" pid="34"/>
+        </datapointtype>
+        <datapointtype mode="rw" name="SET_EVENT_NAME">
+          <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+        </datapointtype>
+        <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+          <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+        </datapointtype>
+        <datapointtype mode="rw" name="SET_EVENT_STATE">
+          <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+          <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+        </datapointtype>
+        <datapointtype mode="rw" name="SET_EVENT_TIMING">
+          <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+          <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+          <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+          <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+          <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+          <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+        </datapointtype>
+        <datapointtype mode="rw" name="SET_TEMPERATURE">
+          <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="31" pid="33"/>
+        </datapointtype>
+      </properties>
+      <functionalblock channel="default" classification="actuator" index="1" name="ByMeCentrale">
+        <groupobjects/>
+        <properties>
+          <datapointtype mode="rw" name="SET_CLIMATE_INFO">
+            <functionproperty field_name="service_id" field_value="0" name="SET_CLIMATE_ASSOCIATED_GROUP" oi="31" pid="35"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+            <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="31" pid="34"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="31" pid="34"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="31" pid="34"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_TEMPERATURE">
+            <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="31" pid="33"/>
+          </datapointtype>
+        </properties>
+      </functionalblock>
+    </device>
+    <application id="0" name="Automazione" offset="0">
+      <index index="40" label="LUCE INGRESSO " number="0" room="INGRESSO" type="LUCE" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C01"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C00"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1001" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="14" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="1" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="41" label="LUCE CUCINA INTERNO" number="0" room="CUCINA" type="LUCE" zone="INTERNO">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C02"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C03"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1001" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="15" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch">
+                <groupobject address="0CBA"/>
+              </datapointtype>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="2" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="42" label="LUCE CUCINA ESTERNO" number="0" room="CUCINA" type="LUCE" zone="ESTERNO">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C05"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C04"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1001" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="16" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch">
+                <groupobject address="0CBA"/>
+              </datapointtype>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="3" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="43" label="LUCE SOGGIORNO " number="0" room="SOGGIORNO" type="LUCE" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C06"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C07"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1001" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="17" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="4" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="44" label="LAMPADA SALOTTO " number="0" room="SALOTTO" type="LAMPADA" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C08"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C09"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1001" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="18" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="5" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="45" label="LUCE CORRIDOIO ZONA NOTTE" number="0" room="CORRIDOIO" type="LUCE" zone="ZONA NOTTE">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C0A"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C0B"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1001" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="19" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="6" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="46" label="LUCE LAVANDERIA " number="0" room="LAVANDERIA" type="LUCE" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C0D"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C0C"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1001" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="20" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="7" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="47" label="LUCE CAMERA MATRIMONIALE " number="0" room="CAMERA MATRIMONIALE" type="LUCE" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C0E"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C0F"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1001" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="21" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="8" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="48" label="LUCE CAMERETTA " number="0" room="CAMERETTA" type="LUCE" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C11"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C10"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1002" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="14" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="1" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="49" label="LUCE BAGNO ZONA NOTTE" number="0" room="BAGNO" type="LUCE" zone="ZONA NOTTE">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C12"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C13"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1002" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="15" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="2" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="50" label="LUCE STUDIO " number="0" room="STUDIO" type="LUCE" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C15"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C14"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1002" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="16" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="3" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="51" label="LUCE TERRAZZO SUD" number="0" room="TERRAZZO" type="LUCE" zone="SUD">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C16"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C17"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1002" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="17" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="4" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="52" label="LUCE TERRAZZO OVEST" number="0" room="TERRAZZO" type="LUCE" zone="OVEST">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C18"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C19"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1002" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="18" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="5" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="53" label="LUCE BAGNO ZONA GIORNO" number="0" room="BAGNO" type="LUCE" zone="ZONA GIORNO">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C1A"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C1B"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1002" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="19" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="6" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="54" label="LUCE WC ZONA GIORNO" number="0" room="WC" type="LUCE" zone="ZONA GIORNO">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C1D"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C1C"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1002" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="20" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="7" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="55" label="LAMPADA CUCINA " number="0" room="CUCINA" type="LAMPADA" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0C1E"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0C1F"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1002" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="21" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="8" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="56" label="TAPPARELLA CAMERA MATRIMONIALE " number="0" room="CAMERA MATRIMONIALE" type="TAPPARELLA" zone="">
+        <datapointtypes channel="CH_Shutter_Automation">
+          <datapointtype mode="rt" name="DPTInfoLock">
+            <groupobject address="0C25"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPTInfoPosizioneTapparella">
+            <groupobject address="0C21"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTLock">
+            <groupobject address="0C24"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTPosizioneTapparella">
+            <groupobject address="0C20"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPTStartStop">
+            <groupobject address="0C27"/>
+          </datapointtype>
+          <datapointtype mode="tw" name="DPTUpDown">
+            <groupobject address="0C26"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1003" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Shutter_Automation" classification="actuator" index="22" name="ByMeTapparelleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTStartStop"/>
+              <datapointtype mode="w" name="DPTUpDown"/>
+              <datapointtype mode="w" name="DPTLock"/>
+              <datapointtype mode="w" name="DPTPosizioneTapparella"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B02"/>
+                <groupobject address="0B03"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPTInfoPosizioneTapparella"/>
+              <datapointtype mode="rt" name="DPTInfoLock"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Shutter_Automation" classification="sensor" index="10" name="ByMeBasculanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B03"/>
+                <groupobject address="0B02"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTStartStop"/>
+              <datapointtype mode="t" name="DPTUpDown"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="57" label="TAPPARELLA CUCINA OVEST" number="0" room="CUCINA" type="TAPPARELLA" zone="OVEST">
+        <datapointtypes channel="CH_Shutter_Automation">
+          <datapointtype mode="rt" name="DPTInfoLock">
+            <groupobject address="0C29"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPTInfoPosizioneTapparella">
+            <groupobject address="0C2F"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTLock">
+            <groupobject address="0C2A"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTPosizioneTapparella">
+            <groupobject address="0C2E"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPTStartStop">
+            <groupobject address="0C28"/>
+          </datapointtype>
+          <datapointtype mode="tw" name="DPTUpDown">
+            <groupobject address="0C2B"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1003" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Shutter_Automation" classification="actuator" index="23" name="ByMeTapparelleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTStartStop"/>
+              <datapointtype mode="w" name="DPTUpDown"/>
+              <datapointtype mode="w" name="DPTLock"/>
+              <datapointtype mode="w" name="DPTPosizioneTapparella"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B02"/>
+                <groupobject address="0B03"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPTInfoPosizioneTapparella"/>
+              <datapointtype mode="rt" name="DPTInfoLock"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Shutter_Automation" classification="sensor" index="11" name="ByMeBasculanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B03"/>
+                <groupobject address="0B02"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTStartStop"/>
+              <datapointtype mode="t" name="DPTUpDown"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="58" label="TAPPARELLA BAGNO ZONA NOTTE" number="0" room="BAGNO" type="TAPPARELLA" zone="ZONA NOTTE">
+        <datapointtypes channel="CH_Shutter_Automation">
+          <datapointtype mode="rt" name="DPTInfoLock">
+            <groupobject address="0C33"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPTInfoPosizioneTapparella">
+            <groupobject address="0C31"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTLock">
+            <groupobject address="0C35"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTPosizioneTapparella">
+            <groupobject address="0C34"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPTStartStop">
+            <groupobject address="0C32"/>
+          </datapointtype>
+          <datapointtype mode="tw" name="DPTUpDown">
+            <groupobject address="0C30"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1003" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Shutter_Automation" classification="actuator" index="24" name="ByMeTapparelleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTStartStop"/>
+              <datapointtype mode="w" name="DPTUpDown"/>
+              <datapointtype mode="w" name="DPTLock"/>
+              <datapointtype mode="w" name="DPTPosizioneTapparella"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B02"/>
+                <groupobject address="0B03"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPTInfoPosizioneTapparella"/>
+              <datapointtype mode="rt" name="DPTInfoLock"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Shutter_Automation" classification="sensor" index="12" name="ByMeBasculanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B03"/>
+                <groupobject address="0B02"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTStartStop"/>
+              <datapointtype mode="t" name="DPTUpDown"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="59" label="TAPPARELLA CAMERETTA " number="0" room="CAMERETTA" type="TAPPARELLA" zone="">
+        <datapointtypes channel="CH_Shutter_Automation">
+          <datapointtype mode="rt" name="DPTInfoLock">
+            <groupobject address="0C3E"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPTInfoPosizioneTapparella">
+            <groupobject address="0C3F"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTLock">
+            <groupobject address="0C3D"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTPosizioneTapparella">
+            <groupobject address="0C3C"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPTStartStop">
+            <groupobject address="0C3B"/>
+          </datapointtype>
+          <datapointtype mode="tw" name="DPTUpDown">
+            <groupobject address="0C38"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1003" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Shutter_Automation" classification="actuator" index="25" name="ByMeTapparelleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTStartStop"/>
+              <datapointtype mode="w" name="DPTUpDown"/>
+              <datapointtype mode="w" name="DPTLock"/>
+              <datapointtype mode="w" name="DPTPosizioneTapparella"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B02"/>
+                <groupobject address="0B03"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPTInfoPosizioneTapparella"/>
+              <datapointtype mode="rt" name="DPTInfoLock"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Shutter_Automation" classification="sensor" index="13" name="ByMeBasculanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B03"/>
+                <groupobject address="0B02"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTStartStop"/>
+              <datapointtype mode="t" name="DPTUpDown"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="60" label="TAPPARELLA CUCINA SUD" number="0" room="CUCINA" type="TAPPARELLA" zone="SUD">
+        <datapointtypes channel="CH_Shutter_Automation">
+          <datapointtype mode="rt" name="DPTInfoLock">
+            <groupobject address="0C45"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPTInfoPosizioneTapparella">
+            <groupobject address="0C41"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTLock">
+            <groupobject address="0C44"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTPosizioneTapparella">
+            <groupobject address="0C40"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPTStartStop">
+            <groupobject address="0C47"/>
+          </datapointtype>
+          <datapointtype mode="tw" name="DPTUpDown">
+            <groupobject address="0C46"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1004" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Shutter_Automation" classification="actuator" index="22" name="ByMeTapparelleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTStartStop"/>
+              <datapointtype mode="w" name="DPTUpDown"/>
+              <datapointtype mode="w" name="DPTLock"/>
+              <datapointtype mode="w" name="DPTPosizioneTapparella"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B02"/>
+                <groupobject address="0B03"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPTInfoPosizioneTapparella"/>
+              <datapointtype mode="rt" name="DPTInfoLock"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Shutter_Automation" classification="sensor" index="10" name="ByMeBasculanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B03"/>
+                <groupobject address="0B02"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTStartStop"/>
+              <datapointtype mode="t" name="DPTUpDown"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="61" label="TAPPARELLA SOGGIORNO SUD" number="0" room="SOGGIORNO" type="TAPPARELLA" zone="SUD">
+        <datapointtypes channel="CH_Shutter_Automation">
+          <datapointtype mode="rt" name="DPTInfoLock">
+            <groupobject address="0C49"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPTInfoPosizioneTapparella">
+            <groupobject address="0C4F"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTLock">
+            <groupobject address="0C4A"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTPosizioneTapparella">
+            <groupobject address="0C4E"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPTStartStop">
+            <groupobject address="0C48"/>
+          </datapointtype>
+          <datapointtype mode="tw" name="DPTUpDown">
+            <groupobject address="0C4B"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1004" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Shutter_Automation" classification="actuator" index="23" name="ByMeTapparelleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTStartStop"/>
+              <datapointtype mode="w" name="DPTUpDown"/>
+              <datapointtype mode="w" name="DPTLock"/>
+              <datapointtype mode="w" name="DPTPosizioneTapparella"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B02"/>
+                <groupobject address="0B03"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPTInfoPosizioneTapparella"/>
+              <datapointtype mode="rt" name="DPTInfoLock"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Shutter_Automation" classification="sensor" index="11" name="ByMeBasculanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B03"/>
+                <groupobject address="0B02"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTStartStop"/>
+              <datapointtype mode="t" name="DPTUpDown"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="62" label="TAPPARELLA BAGNO ZONA GIORNO" number="0" room="BAGNO" type="TAPPARELLA" zone="ZONA GIORNO">
+        <datapointtypes channel="CH_Shutter_Automation">
+          <datapointtype mode="rt" name="DPTInfoLock">
+            <groupobject address="0C53"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPTInfoPosizioneTapparella">
+            <groupobject address="0C51"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTLock">
+            <groupobject address="0C55"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTPosizioneTapparella">
+            <groupobject address="0C54"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPTStartStop">
+            <groupobject address="0C52"/>
+          </datapointtype>
+          <datapointtype mode="tw" name="DPTUpDown">
+            <groupobject address="0C50"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1004" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Shutter_Automation" classification="actuator" index="24" name="ByMeTapparelleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTStartStop"/>
+              <datapointtype mode="w" name="DPTUpDown"/>
+              <datapointtype mode="w" name="DPTLock"/>
+              <datapointtype mode="w" name="DPTPosizioneTapparella"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B02"/>
+                <groupobject address="0B03"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPTInfoPosizioneTapparella"/>
+              <datapointtype mode="rt" name="DPTInfoLock"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Shutter_Automation" classification="sensor" index="12" name="ByMeBasculanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B03"/>
+                <groupobject address="0B02"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTStartStop"/>
+              <datapointtype mode="t" name="DPTUpDown"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="63" label="TAPPARELLA STUDIO " number="0" room="STUDIO" type="TAPPARELLA" zone="">
+        <datapointtypes channel="CH_Shutter_Automation">
+          <datapointtype mode="rt" name="DPTInfoLock">
+            <groupobject address="0C5E"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPTInfoPosizioneTapparella">
+            <groupobject address="0C5F"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTLock">
+            <groupobject address="0C5D"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTPosizioneTapparella">
+            <groupobject address="0C5C"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPTStartStop">
+            <groupobject address="0C5B"/>
+          </datapointtype>
+          <datapointtype mode="tw" name="DPTUpDown">
+            <groupobject address="0C58"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1004" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Shutter_Automation" classification="actuator" index="25" name="ByMeTapparelleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTStartStop"/>
+              <datapointtype mode="w" name="DPTUpDown"/>
+              <datapointtype mode="w" name="DPTLock"/>
+              <datapointtype mode="w" name="DPTPosizioneTapparella"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B02"/>
+                <groupobject address="0B03"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPTInfoPosizioneTapparella"/>
+              <datapointtype mode="rt" name="DPTInfoLock"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Shutter_Automation" classification="sensor" index="13" name="ByMeBasculanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B03"/>
+                <groupobject address="0B02"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTStartStop"/>
+              <datapointtype mode="t" name="DPTUpDown"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="70" label="UNITA' LOGICA " number="0" room="" type="UNITA' LOGICA" zone="">
+        <datapointtypes channel="CH_Logical_Module">
+          <datapointtype mode="rw" name="DPT_DateTime">
+            <groupobject address="0041"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="100B" manufacturer="002C" name="ByMeModuloLogico" type="00BD" version="16">
+          <properties>
+            <datapointtype mode="rw" name="SET_ALL_PROGS_ST">
+              <functionproperty field_name="service_id" field_value="1" name="DISABLE_PROGS" oi="21" pid="9D"/>
+              <functionproperty field_name="service_id" field_value="0" name="ENABLE_PROGS" oi="21" pid="9D"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_EVENT_NAME">
+              <functionproperty field_name="service_id" field_value="0" name="PROGTIME_NAME" oi="21" pid="96"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_EVENT_STATE">
+              <functionproperty field_name="service_id" field_value="0" name="START_PROGTIME" oi="21" pid="97"/>
+              <functionproperty field_name="service_id" field_value="1" name="STOP_PROGTIME" oi="21" pid="97"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_EVENT_TIMING">
+              <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="21" pid="98"/>
+              <functionproperty field_name="service_id" field_value="1" name="SET_DAY_TIMING" oi="21" pid="98"/>
+              <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="21" pid="98"/>
+              <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="21" pid="98"/>
+              <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="21" pid="98"/>
+              <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="21" pid="98"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_PROG_IDS">
+              <functionproperty field_name="service_id" field_value="2" name="PROGLOG_ID" oi="21" pid="9C"/>
+              <functionproperty field_name="service_id" field_value="0" name="PROGLOG_NUM" oi="21" pid="9C"/>
+              <functionproperty field_name="service_id" field_value="1" name="PROGTIME_NUM" oi="21" pid="9C"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_PROG_NAME">
+              <functionproperty field_name="service_id" field_value="0" name="PROGLOG_NAME" oi="21" pid="9A"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_PROG_STATE">
+              <functionproperty field_name="service_id" field_value="0" name="START_PROGLOG" oi="21" pid="9B"/>
+              <functionproperty field_name="service_id" field_value="1" name="STOP_PROGLOG" oi="21" pid="9B"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_Logical_Module" classification="actuator" index="1" main="True" name="ByMeModuloLogico">
+            <groupobjects>
+              <datapointtype mode="rw" name="DPT_DateTime"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="SET_ALL_PROGS_ST">
+                <functionproperty field_name="service_id" field_value="1" name="DISABLE_PROGS" oi="21" pid="9D"/>
+                <functionproperty field_name="service_id" field_value="0" name="ENABLE_PROGS" oi="21" pid="9D"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_EVENT_NAME">
+                <functionproperty field_name="service_id" field_value="0" name="PROGTIME_NAME" oi="21" pid="96"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_EVENT_STATE">
+                <functionproperty field_name="service_id" field_value="0" name="START_PROGTIME" oi="21" pid="97"/>
+                <functionproperty field_name="service_id" field_value="1" name="STOP_PROGTIME" oi="21" pid="97"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_EVENT_TIMING">
+                <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="21" pid="98"/>
+                <functionproperty field_name="service_id" field_value="1" name="SET_DAY_TIMING" oi="21" pid="98"/>
+                <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="21" pid="98"/>
+                <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="21" pid="98"/>
+                <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="21" pid="98"/>
+                <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="21" pid="98"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_PROG_IDS">
+                <functionproperty field_name="service_id" field_value="2" name="PROGLOG_ID" oi="21" pid="9C"/>
+                <functionproperty field_name="service_id" field_value="0" name="PROGLOG_NUM" oi="21" pid="9C"/>
+                <functionproperty field_name="service_id" field_value="1" name="PROGTIME_NUM" oi="21" pid="9C"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_PROG_NAME">
+                <functionproperty field_name="service_id" field_value="0" name="PROGLOG_NAME" oi="21" pid="9A"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_PROG_STATE">
+                <functionproperty field_name="service_id" field_value="0" name="START_PROGLOG" oi="21" pid="9B"/>
+                <functionproperty field_name="service_id" field_value="1" name="STOP_PROGLOG" oi="21" pid="9B"/>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="71" label="LUCE 2 BAGNO ZONA GIORNO" number="2" room="BAGNO" type="LUCE" zone="ZONA GIORNO">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0CB0"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0CB1"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="100C" manufacturer="002C" name="ByMe2IngressiReleDomoticaBase" type="00C1" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="4" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="1" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="72" label="LUCE 2 BAGNO ZONA NOTTE" number="2" room="BAGNO" type="LUCE" zone="ZONA NOTTE">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0CB2"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0CB3"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="100D" manufacturer="002C" name="ByMe2IngressiReleDomoticaBase" type="00C1" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="4" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="1" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="73" label="LAMPADA CAMERA MATRIMONIALE SUD" number="0" room="CAMERA MATRIMONIALE" type="LAMPADA" zone="SUD">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0CB4"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0CB5"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="100E" manufacturer="002C" name="ByMe2IngressiReleDomoticaBase" type="00C1" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="4" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="1" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="74" label="LAMPADA CAMERA MATRIMONIALE NORD" number="0" room="CAMERA MATRIMONIALE" type="LAMPADA" zone="NORD">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0CB6"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0CB7"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="100F" manufacturer="002C" name="ByMe2IngressiReleDomoticaBase" type="00C1" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="4" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="1" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="75" label="LUCE SGABUZZINO " number="0" room="SGABUZZINO" type="LUCE" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0CB8"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Info_Switch">
+            <groupobject address="0CB9"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1010" manufacturer="002C" name="ByMe2IngressiReleDomoticaBase" type="00C1" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="4" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rt" name="DPT_Info_Switch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="1" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="76" label="PULSANTE CUCINA " number="0" room="CUCINA" type="PULSANTE" zone="">
+        <datapointtypes channel="CH_Main_Automation">
+          <datapointtype mode="rtw" name="DPTSwitch">
+            <groupobject address="0CBA"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_Info_Switch">
+            <groupobject address="0CBB"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1001" manufacturer="002C" name="ByMe9Ingressi8UsciteDomoticaBase" type="00BE" version="17">
+          <properties/>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="15" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch">
+                <groupobject address="0C02"/>
+              </datapointtype>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="actuator" index="16" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch">
+                <groupobject address="0C05"/>
+              </datapointtype>
+              <datapointtype mode="w" name="DPTVimarScene">
+                <groupobject address="0B01"/>
+              </datapointtype>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+          <functionalblock channel="CH_Main_Automation" classification="sensor" index="9" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Info_Switch"/>
+              <datapointtype mode="w" name="DPTVimarScene"/>
+              <datapointtype mode="rwt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+    </application>
+    <application id="1" name="Clima" offset="0">
+      <index climatic_zone="1" index="64" label="TERMOSTATO ZONA GIORNO" number="0" room="" type="TERMOSTATO" zone="ZONA GIORNO">
+        <datapointtypes channel="CH_HVAC_NoZonaNeutra">
+          <datapointtype mode="rw" name="SET_CLIMATE_INFO">
+            <functionproperty field_name="service_id" field_value="0" name="SET_CLIMATE_ASSOCIATED_GROUP" oi="31" pid="35"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+            <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="31" pid="34"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="31" pid="34"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="31" pid="34"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_TEMPERATURE">
+            <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="31" pid="33"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTClimaForcedOff">
+            <groupobject address="0C76"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_AllarmeMassetto">
+            <groupobject address="0C69"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_ChangeoverModeNoZonaNeutra">
+            <groupobject address="0C79"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_DateTime">
+            <groupobject address="0041"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_Enable_FanManual">
+            <groupobject address="0C62"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_FanSpeed">
+            <groupobject address="0C73"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_HVACMode">
+            <groupobject address="0C75"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_ChangeoverMode">
+            <groupobject address="0C68"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_Enable_FanManual">
+            <groupobject address="0C63"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_FanSpeed">
+            <groupobject address="0C65"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_HVACMode">
+            <groupobject address="0C7D"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointAssenzaCond">
+            <groupobject address="0C7F"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointAssenzaRisc">
+            <groupobject address="0C6C"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointCorrente">
+            <groupobject address="0C6D"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointManualeCond">
+            <groupobject address="0C78"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointManualeRisc">
+            <groupobject address="0C7A"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointProtezioneCond">
+            <groupobject address="0C7B"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointProtezioneRisc">
+            <groupobject address="0C67"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointRiduzioneCond">
+            <groupobject address="0C6A"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointRiduzioneRisc">
+            <groupobject address="0C70"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_TemporizzazioneFunzioneManuale">
+            <groupobject address="0C83"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Scaling">
+            <groupobject address="0CAF"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointAssenzaCond">
+            <groupobject address="0C81"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointAssenzaRisc">
+            <groupobject address="0C6E"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointCorrente">
+            <groupobject address="0C71"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointManualeCond">
+            <groupobject address="0C64"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointManualeRisc">
+            <groupobject address="0C7C"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointProtezioneCond">
+            <groupobject address="0C61"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointProtezioneRisc">
+            <groupobject address="0C82"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointRiduzioneCond">
+            <groupobject address="0C7E"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointRiduzioneRisc">
+            <groupobject address="0C6B"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_TemperaturaAmbiente">
+            <groupobject address="0C72"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_TemporizzazioneFunzioneManuale">
+            <groupobject address="0C66"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_Timed_Dynamic_Mode">
+            <groupobject address="0CAE"/>
+          </datapointtype>
+          <datapointtype mode="rtw" name="DPT_Value_Humidity">
+            <groupobject address="0C80"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Value_Temp">
+            <groupobject address="0C60"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_VimarStatoUscite">
+            <groupobject address="0C6F"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1005" manufacturer="002C" name="ByMeTermostato" type="00BA" version="16">
+          <properties>
+            <datapointtype mode="rw" name="VimarMappaUscite">
+              <property noe="4" oi="00" pid="D3" startIndex="01">
+                <field name="comportamento_uscita_4">non_utilizzata</field>
+                <field name="comportamento_uscita_3">non_utilizzata</field>
+                <field name="comportamento_uscita_2">principale_condizionamento</field>
+                <field name="comportamento_uscita_1">principale_riscaldamento</field>
+              </property>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+              <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_TEMPERATURE">
+              <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_HVAC_NoZonaNeutra" classification="sensor" index="1" main="True" name="Termostato330">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_ChangeoverModeNoZonaNeutra"/>
+              <datapointtype mode="rt" name="DPT_Info_ChangeoverMode"/>
+              <datapointtype mode="w" name="DPT_HVACMode"/>
+              <datapointtype mode="rt" name="DPT_Info_HVACMode"/>
+              <datapointtype mode="w" name="DPT_DateTime"/>
+              <datapointtype mode="w" name="DPT_SetpointCorrente"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointCorrente"/>
+              <datapointtype mode="w" name="DPT_Value_Humidity"/>
+              <datapointtype mode="w" name="DPT_Enable_FanManual"/>
+              <datapointtype mode="rt" name="DPT_Info_Enable_FanManual"/>
+              <datapointtype mode="w" name="DPT_FanSpeed"/>
+              <datapointtype mode="rt" name="DPT_Info_FanSpeed"/>
+              <datapointtype mode="w" name="DPTClimaForcedOff"/>
+              <datapointtype mode="rt" name="DPT_TemperaturaAmbiente"/>
+              <datapointtype mode="rt" name="DPT_Value_Temp"/>
+              <datapointtype mode="rt" name="DPT_VimarStatoUscite"/>
+              <datapointtype mode="w" name="DPT_TemporizzazioneFunzioneManuale"/>
+              <datapointtype mode="rt" name="DPT_Info_TemporizzazioneFunzioneManuale"/>
+              <datapointtype mode="rt" name="DPT_AllarmeMassetto"/>
+              <datapointtype mode="w" name="DPTVimarScene"/>
+              <datapointtype mode="w" name="DPT_SetpointManualeRisc"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointManualeRisc"/>
+              <datapointtype mode="w" name="DPT_SetpointManualeCond"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointManualeCond"/>
+              <datapointtype mode="w" name="DPT_SetpointRiduzioneRisc"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointRiduzioneRisc"/>
+              <datapointtype mode="w" name="DPT_SetpointRiduzioneCond"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointRiduzioneCond"/>
+              <datapointtype mode="w" name="DPT_SetpointAssenzaRisc"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointAssenzaRisc"/>
+              <datapointtype mode="w" name="DPT_SetpointAssenzaCond"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointAssenzaCond"/>
+              <datapointtype mode="w" name="DPT_SetpointProtezioneRisc"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointProtezioneRisc"/>
+              <datapointtype mode="w" name="DPT_SetpointProtezioneCond"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointProtezioneCond"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="VimarMappaUscite">
+                <property noe="4" oi="00" pid="D3" startIndex="01">
+                  <field name="comportamento_uscita_4">non_utilizzata</field>
+                  <field name="comportamento_uscita_3">non_utilizzata</field>
+                  <field name="comportamento_uscita_2">principale_condizionamento</field>
+                  <field name="comportamento_uscita_1">principale_riscaldamento</field>
+                </property>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+                <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_TEMPERATURE">
+                <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="UtilizzoSonda2">
+                <property noe="1" oi="00" pid="65" startIndex="0C">
+                  <field name="funzione">per_sola_visualizzazione</field>
+                </property>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+        <device address="100A" manufacturer="002C" name="ByMe3IngressiAnalogici" type="00B8" version="33">
+          <properties/>
+          <functionalblock channel="CH_HVAC_NoZonaNeutra" classification="sensor" index="1" name="IngressoAnalogico_VI">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_Timed_Dynamic_Mode"/>
+              <datapointtype mode="rt" name="DPT_Value_Humidity"/>
+              <datapointtype mode="rt" name="DPT_Scaling"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="ValueAtMax_Humidity">
+                <property noe="2" oi="00" pid="65" startIndex="0B">
+                  <field name="humidity">100.0</field>
+                </property>
+              </datapointtype>
+              <datapointtype mode="rw" name="ValueAtMin_Humidity">
+                <property noe="2" oi="00" pid="65" startIndex="09">
+                  <field name="humidity">0.0</field>
+                </property>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="65" label="TERMOPAVIMENTO ZONA GIORNO" number="0" room="" type="TERMOPAVIMENTO" zone="ZONA GIORNO">
+        <datapointtypes channel="CH_Uscita_ValvolaOnOff">
+          <datapointtype mode="tw" name="DPTSwitch">
+            <groupobject address="0C84"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1005" manufacturer="002C" name="ByMeTermostato" type="00BA" version="16">
+          <properties>
+            <datapointtype mode="rw" name="VimarMappaUscite">
+              <property noe="4" oi="00" pid="D3" startIndex="01">
+                <field name="comportamento_uscita_4">non_utilizzata</field>
+                <field name="comportamento_uscita_3">non_utilizzata</field>
+                <field name="comportamento_uscita_2">principale_condizionamento</field>
+                <field name="comportamento_uscita_1">principale_riscaldamento</field>
+              </property>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+              <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_TEMPERATURE">
+              <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_Uscita_ValvolaOnOff" classification="actuator" index="2" name="UscitaTermostato">
+            <groupobjects>
+              <datapointtype mode="t" name="DPTSwitch"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="VimarMappaUscite">
+                <property noe="4" oi="00" pid="D3" startIndex="01">
+                  <field name="comportamento_uscita_4">non_utilizzata</field>
+                  <field name="comportamento_uscita_3">non_utilizzata</field>
+                  <field name="comportamento_uscita_2">principale_condizionamento</field>
+                  <field name="comportamento_uscita_1">principale_riscaldamento</field>
+                </property>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+                <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_TEMPERATURE">
+                <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+        <device address="1006" manufacturer="002C" name="ByMe4UsciteDomoticaBase" type="00C2" version="16">
+          <properties/>
+          <functionalblock channel="CH_Uscita_ValvolaOnOff" classification="actuator" index="1" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="66" label="FANCOIL ZONA GIORNO" number="0" room="" type="FANCOIL" zone="ZONA GIORNO">
+        <datapointtypes channel="CH_Uscita_FancoilVimar2T">
+          <datapointtype mode="tw" name="DPT_VimarFancoil_2T">
+            <groupobject address="0C86"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1005" manufacturer="002C" name="ByMeTermostato" type="00BA" version="16">
+          <properties>
+            <datapointtype mode="rw" name="VimarMappaUscite">
+              <property noe="4" oi="00" pid="D3" startIndex="01">
+                <field name="comportamento_uscita_4">non_utilizzata</field>
+                <field name="comportamento_uscita_3">non_utilizzata</field>
+                <field name="comportamento_uscita_2">principale_condizionamento</field>
+                <field name="comportamento_uscita_1">principale_riscaldamento</field>
+              </property>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+              <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_TEMPERATURE">
+              <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_Uscita_FancoilVimar2T" classification="actuator" index="3" name="UscitaTermostato">
+            <groupobjects>
+              <datapointtype mode="t" name="DPT_VimarFancoil_2T"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="VimarMappaUscite">
+                <property noe="4" oi="00" pid="D3" startIndex="01">
+                  <field name="comportamento_uscita_4">non_utilizzata</field>
+                  <field name="comportamento_uscita_3">non_utilizzata</field>
+                  <field name="comportamento_uscita_2">principale_condizionamento</field>
+                  <field name="comportamento_uscita_1">principale_riscaldamento</field>
+                </property>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+                <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_TEMPERATURE">
+                <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+        <device address="1007" manufacturer="002C" name="ByMe4UsciteDomoticaBase" type="00C2" version="16">
+          <properties/>
+          <functionalblock channel="CH_Uscita_FancoilVimar2T" classification="actuator" index="7" name="ByMeAttuatoreFancoilDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_VimarFancoil_2T"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+      <index climatic_zone="2" index="67" label="TERMOSTATO ZONA NOTTE" number="0" room="" type="TERMOSTATO" zone="ZONA NOTTE">
+        <datapointtypes channel="CH_HVAC_NoZonaNeutra">
+          <datapointtype mode="rw" name="SET_CLIMATE_INFO">
+            <functionproperty field_name="service_id" field_value="0" name="SET_CLIMATE_ASSOCIATED_GROUP" oi="31" pid="35"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+            <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="31" pid="34"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="31" pid="34"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="31" pid="34"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_TEMPERATURE">
+            <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="31" pid="33"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPTClimaForcedOff">
+            <groupobject address="0C9D"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_AllarmeMassetto">
+            <groupobject address="0C90"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_ChangeoverModeNoZonaNeutra">
+            <groupobject address="0CA0"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_DateTime">
+            <groupobject address="0041"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_Enable_FanManual">
+            <groupobject address="0C89"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_FanSpeed">
+            <groupobject address="0C9A"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_HVACMode">
+            <groupobject address="0C9C"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_ChangeoverMode">
+            <groupobject address="0C8F"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_Enable_FanManual">
+            <groupobject address="0C8A"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_FanSpeed">
+            <groupobject address="0C8C"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_HVACMode">
+            <groupobject address="0CA4"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointAssenzaCond">
+            <groupobject address="0CA6"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointAssenzaRisc">
+            <groupobject address="0C93"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointCorrente">
+            <groupobject address="0C94"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointManualeCond">
+            <groupobject address="0C9F"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointManualeRisc">
+            <groupobject address="0CA1"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointProtezioneCond">
+            <groupobject address="0CA2"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointProtezioneRisc">
+            <groupobject address="0C8E"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointRiduzioneCond">
+            <groupobject address="0C91"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_SetpointRiduzioneRisc">
+            <groupobject address="0C97"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Info_TemporizzazioneFunzioneManuale">
+            <groupobject address="0CAA"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointAssenzaCond">
+            <groupobject address="0CA8"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointAssenzaRisc">
+            <groupobject address="0C95"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointCorrente">
+            <groupobject address="0C98"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointManualeCond">
+            <groupobject address="0C8B"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointManualeRisc">
+            <groupobject address="0CA3"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointProtezioneCond">
+            <groupobject address="0C88"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointProtezioneRisc">
+            <groupobject address="0CA9"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointRiduzioneCond">
+            <groupobject address="0CA5"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_SetpointRiduzioneRisc">
+            <groupobject address="0C92"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_TemperaturaAmbiente">
+            <groupobject address="0C99"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_TemporizzazioneFunzioneManuale">
+            <groupobject address="0C8D"/>
+          </datapointtype>
+          <datapointtype mode="w" name="DPT_Value_Humidity">
+            <groupobject address="0CA7"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_Value_Temp">
+            <groupobject address="0C87"/>
+          </datapointtype>
+          <datapointtype mode="rt" name="DPT_VimarStatoUscite">
+            <groupobject address="0C96"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1008" manufacturer="002C" name="ByMeTermostato" type="00BA" version="16">
+          <properties>
+            <datapointtype mode="rw" name="VimarMappaUscite">
+              <property noe="4" oi="00" pid="D3" startIndex="01">
+                <field name="comportamento_uscita_4">non_utilizzata</field>
+                <field name="comportamento_uscita_3">non_utilizzata</field>
+                <field name="comportamento_uscita_2">principale_condizionamento</field>
+                <field name="comportamento_uscita_1">principale_riscaldamento</field>
+              </property>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+              <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_TEMPERATURE">
+              <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_HVAC_NoZonaNeutra" classification="sensor" index="1" main="True" name="Termostato330">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_ChangeoverModeNoZonaNeutra"/>
+              <datapointtype mode="rt" name="DPT_Info_ChangeoverMode"/>
+              <datapointtype mode="w" name="DPT_HVACMode"/>
+              <datapointtype mode="rt" name="DPT_Info_HVACMode"/>
+              <datapointtype mode="w" name="DPT_DateTime"/>
+              <datapointtype mode="w" name="DPT_SetpointCorrente"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointCorrente"/>
+              <datapointtype mode="w" name="DPT_Value_Humidity"/>
+              <datapointtype mode="w" name="DPT_Enable_FanManual"/>
+              <datapointtype mode="rt" name="DPT_Info_Enable_FanManual"/>
+              <datapointtype mode="w" name="DPT_FanSpeed"/>
+              <datapointtype mode="rt" name="DPT_Info_FanSpeed"/>
+              <datapointtype mode="w" name="DPTClimaForcedOff"/>
+              <datapointtype mode="rt" name="DPT_TemperaturaAmbiente"/>
+              <datapointtype mode="rt" name="DPT_Value_Temp"/>
+              <datapointtype mode="rt" name="DPT_VimarStatoUscite"/>
+              <datapointtype mode="w" name="DPT_TemporizzazioneFunzioneManuale"/>
+              <datapointtype mode="rt" name="DPT_Info_TemporizzazioneFunzioneManuale"/>
+              <datapointtype mode="rt" name="DPT_AllarmeMassetto"/>
+              <datapointtype mode="w" name="DPTVimarScene"/>
+              <datapointtype mode="w" name="DPT_SetpointManualeRisc"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointManualeRisc"/>
+              <datapointtype mode="w" name="DPT_SetpointManualeCond"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointManualeCond"/>
+              <datapointtype mode="w" name="DPT_SetpointRiduzioneRisc"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointRiduzioneRisc"/>
+              <datapointtype mode="w" name="DPT_SetpointRiduzioneCond"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointRiduzioneCond"/>
+              <datapointtype mode="w" name="DPT_SetpointAssenzaRisc"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointAssenzaRisc"/>
+              <datapointtype mode="w" name="DPT_SetpointAssenzaCond"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointAssenzaCond"/>
+              <datapointtype mode="w" name="DPT_SetpointProtezioneRisc"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointProtezioneRisc"/>
+              <datapointtype mode="w" name="DPT_SetpointProtezioneCond"/>
+              <datapointtype mode="rt" name="DPT_Info_SetpointProtezioneCond"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="VimarMappaUscite">
+                <property noe="4" oi="00" pid="D3" startIndex="01">
+                  <field name="comportamento_uscita_4">non_utilizzata</field>
+                  <field name="comportamento_uscita_3">non_utilizzata</field>
+                  <field name="comportamento_uscita_2">principale_condizionamento</field>
+                  <field name="comportamento_uscita_1">principale_riscaldamento</field>
+                </property>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+                <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_TEMPERATURE">
+                <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="UtilizzoSonda2">
+                <property noe="1" oi="00" pid="65" startIndex="0C">
+                  <field name="funzione">per_termoregolazione_sostituisce_sonda_1</field>
+                </property>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="68" label="TERMOPAVIMENTO ZONA NOTTE" number="0" room="" type="TERMOPAVIMENTO" zone="ZONA NOTTE">
+        <datapointtypes channel="CH_Uscita_ValvolaOnOff">
+          <datapointtype mode="tw" name="DPTSwitch">
+            <groupobject address="0CAB"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1006" manufacturer="002C" name="ByMe4UsciteDomoticaBase" type="00C2" version="16">
+          <properties/>
+          <functionalblock channel="CH_Uscita_ValvolaOnOff" classification="actuator" index="2" name="ByMeReleDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="wt" name="DPTSwitch"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+        <device address="1008" manufacturer="002C" name="ByMeTermostato" type="00BA" version="16">
+          <properties>
+            <datapointtype mode="rw" name="VimarMappaUscite">
+              <property noe="4" oi="00" pid="D3" startIndex="01">
+                <field name="comportamento_uscita_4">non_utilizzata</field>
+                <field name="comportamento_uscita_3">non_utilizzata</field>
+                <field name="comportamento_uscita_2">principale_condizionamento</field>
+                <field name="comportamento_uscita_1">principale_riscaldamento</field>
+              </property>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+              <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_TEMPERATURE">
+              <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_Uscita_ValvolaOnOff" classification="actuator" index="2" name="UscitaTermostato">
+            <groupobjects>
+              <datapointtype mode="t" name="DPTSwitch"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="VimarMappaUscite">
+                <property noe="4" oi="00" pid="D3" startIndex="01">
+                  <field name="comportamento_uscita_4">non_utilizzata</field>
+                  <field name="comportamento_uscita_3">non_utilizzata</field>
+                  <field name="comportamento_uscita_2">principale_condizionamento</field>
+                  <field name="comportamento_uscita_1">principale_riscaldamento</field>
+                </property>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+                <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_TEMPERATURE">
+                <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="69" label="FANCOIL ZONA NOTTE" number="0" room="" type="FANCOIL" zone="ZONA NOTTE">
+        <datapointtypes channel="CH_Uscita_FancoilVimar2T">
+          <datapointtype mode="tw" name="DPT_VimarFancoil_2T">
+            <groupobject address="0CAD"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1008" manufacturer="002C" name="ByMeTermostato" type="00BA" version="16">
+          <properties>
+            <datapointtype mode="rw" name="VimarMappaUscite">
+              <property noe="4" oi="00" pid="D3" startIndex="01">
+                <field name="comportamento_uscita_4">non_utilizzata</field>
+                <field name="comportamento_uscita_3">non_utilizzata</field>
+                <field name="comportamento_uscita_2">principale_condizionamento</field>
+                <field name="comportamento_uscita_1">principale_riscaldamento</field>
+              </property>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+              <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+              <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+            </datapointtype>
+            <datapointtype mode="rw" name="SET_TEMPERATURE">
+              <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_Uscita_FancoilVimar2T" classification="actuator" index="3" name="UscitaTermostato">
+            <groupobjects>
+              <datapointtype mode="t" name="DPT_VimarFancoil_2T"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="VimarMappaUscite">
+                <property noe="4" oi="00" pid="D3" startIndex="01">
+                  <field name="comportamento_uscita_4">non_utilizzata</field>
+                  <field name="comportamento_uscita_3">non_utilizzata</field>
+                  <field name="comportamento_uscita_2">principale_condizionamento</field>
+                  <field name="comportamento_uscita_1">principale_riscaldamento</field>
+                </property>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_CLIMATE_PROGRAM">
+                <functionproperty field_name="service_id" field_value="1" name="SET_CLIMATE_DAY_TIMING" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="2" name="SET_RANGE_TEMPERATURE" oi="22" pid="34"/>
+                <functionproperty field_name="service_id" field_value="0" name="SET_WEEK_TEMPERATURE" oi="22" pid="34"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="SET_TEMPERATURE">
+                <functionproperty field_name="service_id" field_value="0" name="SET_TEMPERATURE_VALUE" oi="22" pid="33"/>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+        <device address="1009" manufacturer="002C" name="ByMe4UsciteDomoticaBase" type="00C2" version="16">
+          <properties/>
+          <functionalblock channel="CH_Uscita_FancoilVimar2T" classification="actuator" index="7" name="ByMeAttuatoreFancoilDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="w" name="DPT_VimarFancoil_2T"/>
+            </groupobjects>
+            <properties/>
+          </functionalblock>
+        </device>
+      </index>
+    </application>
+    <application id="2" name="Carichi" offset="0">
+      <index index="374" label="GESTORE 1 " number="1" room="" type="GESTORE" zone="">
+        <datapointtypes channel="CH_Gestore_CC">
+          <datapointtype mode="rw" name="DPT_Alarm_StatusG">
+            <groupobject address="0CBD"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_AllarmeG">
+            <groupobject address="0CBE"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_CfgAllarmeG">
+            <groupobject address="0CBC"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Cmd_Status">
+            <groupobject address="0CBF"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_DateTime">
+            <groupobject address="0041"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_GlobalPower">
+            <groupobject address="0CC0"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1012" manufacturer="002C" name="ByMeControlloCarichi2" type="00B0" version="16">
+          <properties>
+            <datapointtype mode="rw" name="Setup probe pdt">
+              <functionproperty oi="21" pid="6A"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_Gestore_CC" classification="sensor" index="1" main="True" name="ByMeGestioneDispositivoCC">
+            <groupobjects>
+              <datapointtype mode="rw" name="DPT_CfgAllarmeG"/>
+              <datapointtype mode="rw" name="DPT_AllarmeG"/>
+              <datapointtype mode="rw" name="DPT_Alarm_StatusG"/>
+              <datapointtype mode="rw" name="DPT_Cmd_Status"/>
+              <datapointtype mode="rw" name="DPT_DateTime"/>
+              <datapointtype mode="rw" name="DPT_GlobalPower"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="Setup probe pdt">
+                <functionproperty oi="21" pid="6A"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="GlobaleSoglie">
+                <property noe="8" oi="00" pid="65" startIndex="0D"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="FunzionamentoMonofaseTrifase">
+                <property noe="1" oi="00" pid="65" startIndex="17">
+                  <field name="funzionamento_monofase_trifase">monofase</field>
+                </property>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="375" label="LINEA 1 " number="1" room="" type="LINEA" zone="">
+        <datapointtypes channel="CH_GestioneLinea">
+          <datapointtype mode="rw" name="DPT_Alarm_StatusL">
+            <groupobject address="0CC5"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_AllarmeL">
+            <groupobject address="0CC1"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_CfgAllarmeL">
+            <groupobject address="0CC2"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_PotenzaAttiva">
+            <groupobject address="0CC3"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_PotenzaReattiva">
+            <groupobject address="0CC4"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1012" manufacturer="002C" name="ByMeControlloCarichi2" type="00B0" version="16">
+          <properties>
+            <datapointtype mode="rw" name="Setup probe pdt">
+              <functionproperty oi="21" pid="6A"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_GestioneLinea" classification="sensor" index="2" main="True" name="ByMeGestioneLinea">
+            <groupobjects>
+              <datapointtype mode="rw" name="DPT_PotenzaAttiva"/>
+              <datapointtype mode="rw" name="DPT_PotenzaReattiva"/>
+              <datapointtype mode="rw" name="DPT_CfgAllarmeL"/>
+              <datapointtype mode="rw" name="DPT_AllarmeL"/>
+              <datapointtype mode="rw" name="DPT_Alarm_StatusL"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="Setup probe pdt">
+                <functionproperty oi="21" pid="6A"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="LineaSoglie">
+                <property noe="8" oi="00" pid="66" startIndex="01"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="MisuraTipo">
+                <property noe="1" oi="00" pid="66" startIndex="11">
+                  <field name="misura_tipo">complessiva_risultante</field>
+                </property>
+              </datapointtype>
+              <datapointtype mode="rw" name="MisuraTipo">
+                <property noe="1" oi="00" pid="66" startIndex="12">
+                  <field name="misura_tipo">non_utilizzata</field>
+                </property>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="376" label="LINEA 2 " number="2" room="" type="LINEA" zone="">
+        <datapointtypes channel="CH_GestioneLinea">
+          <datapointtype mode="rw" name="DPT_Alarm_StatusL">
+            <groupobject address="0CC6"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_AllarmeL">
+            <groupobject address="0CC9"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_CfgAllarmeL">
+            <groupobject address="0CCA"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_PotenzaAttiva">
+            <groupobject address="0CC8"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_PotenzaReattiva">
+            <groupobject address="0CC7"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1012" manufacturer="002C" name="ByMeControlloCarichi2" type="00B0" version="16">
+          <properties>
+            <datapointtype mode="rw" name="Setup probe pdt">
+              <functionproperty oi="21" pid="6A"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_GestioneLinea" classification="sensor" index="3" main="True" name="ByMeGestioneLinea">
+            <groupobjects>
+              <datapointtype mode="rw" name="DPT_PotenzaAttiva"/>
+              <datapointtype mode="rw" name="DPT_PotenzaReattiva"/>
+              <datapointtype mode="rw" name="DPT_CfgAllarmeL"/>
+              <datapointtype mode="rw" name="DPT_AllarmeL"/>
+              <datapointtype mode="rw" name="DPT_Alarm_StatusL"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="Setup probe pdt">
+                <functionproperty oi="21" pid="6A"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="LineaSoglie">
+                <property noe="8" oi="00" pid="67" startIndex="01"/>
+              </datapointtype>
+              <datapointtype mode="rw" name="MisuraTipo">
+                <property noe="1" oi="00" pid="67" startIndex="11">
+                  <field name="misura_tipo">autoproduzione</field>
+                </property>
+              </datapointtype>
+              <datapointtype mode="rw" name="MisuraTipo">
+                <property noe="1" oi="00" pid="67" startIndex="12">
+                  <field name="misura_tipo">non_utilizzata</field>
+                </property>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="394" label="MISURATORE 1 " number="1" room="" type="MISURATORE" zone="">
+        <datapointtypes channel="CH_Misuratore">
+          <datapointtype mode="rw" name="DPT_Energia_Assoluta">
+            <groupobject address="0CCF"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Energia_Parziale">
+            <groupobject address="0CD1"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Mains_Info_Energy">
+            <groupobject address="0CCC"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_PotenzaAttiva">
+            <groupobject address="0CCB"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_PotenzaReattiva">
+            <groupobject address="0CCD"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Reset_History">
+            <groupobject address="0CD2"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Reset_Parziale">
+            <groupobject address="0CCE"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Timed_Dynamic_Mode">
+            <groupobject address="0CD0"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1012" manufacturer="002C" name="ByMeControlloCarichi2" type="00B0" version="16">
+          <properties>
+            <datapointtype mode="rw" name="Setup probe pdt">
+              <functionproperty oi="21" pid="6A"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_Misuratore" classification="sensor" index="21" main="True" name="ByMeMisuratoreConsumoCC">
+            <groupobjects>
+              <datapointtype mode="rw" name="DPT_Reset_Parziale"/>
+              <datapointtype mode="rw" name="DPT_Reset_History"/>
+              <datapointtype mode="rw" name="DPT_PotenzaAttiva"/>
+              <datapointtype mode="rw" name="DPT_Energia_Parziale"/>
+              <datapointtype mode="rw" name="DPT_Energia_Assoluta"/>
+              <datapointtype mode="rw" name="DPT_Mains_Info_Energy"/>
+              <datapointtype mode="rw" name="DPT_PotenzaReattiva"/>
+              <datapointtype mode="rw" name="DPT_Timed_Dynamic_Mode"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="Setup probe pdt">
+                <functionproperty oi="21" pid="6A"/>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="395" label="MISURATORE 2 " number="2" room="" type="MISURATORE" zone="">
+        <datapointtypes channel="CH_Misuratore">
+          <datapointtype mode="rw" name="DPT_Energia_Assoluta">
+            <groupobject address="0CD5"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Energia_Parziale">
+            <groupobject address="0CD8"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Mains_Info_Energy">
+            <groupobject address="0CDA"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_PotenzaAttiva">
+            <groupobject address="0CD9"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_PotenzaReattiva">
+            <groupobject address="0CD3"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Reset_History">
+            <groupobject address="0CD7"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Reset_Parziale">
+            <groupobject address="0CD6"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="DPT_Timed_Dynamic_Mode">
+            <groupobject address="0CD4"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1012" manufacturer="002C" name="ByMeControlloCarichi2" type="00B0" version="16">
+          <properties>
+            <datapointtype mode="rw" name="Setup probe pdt">
+              <functionproperty oi="21" pid="6A"/>
+            </datapointtype>
+          </properties>
+          <functionalblock channel="CH_Misuratore" classification="sensor" index="22" main="True" name="ByMeMisuratoreConsumoCC">
+            <groupobjects>
+              <datapointtype mode="rw" name="DPT_Reset_Parziale"/>
+              <datapointtype mode="rw" name="DPT_Reset_History"/>
+              <datapointtype mode="rw" name="DPT_PotenzaAttiva"/>
+              <datapointtype mode="rw" name="DPT_Energia_Parziale"/>
+              <datapointtype mode="rw" name="DPT_Energia_Assoluta"/>
+              <datapointtype mode="rw" name="DPT_Mains_Info_Energy"/>
+              <datapointtype mode="rw" name="DPT_PotenzaReattiva"/>
+              <datapointtype mode="rw" name="DPT_Timed_Dynamic_Mode"/>
+            </groupobjects>
+            <properties>
+              <datapointtype mode="rw" name="Setup probe pdt">
+                <functionproperty oi="21" pid="6A"/>
+              </datapointtype>
+            </properties>
+          </functionalblock>
+        </device>
+      </index>
+    </application>
+    <application id="4" name="Scenari Globali" offset="545"/>
+    <application id="5" name="Scenari Locali" offset="513">
+      <index index="513" label="Spegni tutto" number="" room="" type="" zone="">
+        <datapointtypes channel="CH_Scene">
+          <datapointtype mode="t" name="DPTVimarScene">
+            <groupobject address="0B01"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1013" manufacturer="002C" name="ByMe3IngressiDomoticaBase" type="00BF" version="17">
+          <properties/>
+          <functionalblock channel="CH_Scene" classification="sensor" index="3" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="t" name="DPTVimarScene"/>
+            </groupobjects>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="514" label="Tapp. chiuse" number="" room="" type="" zone="">
+        <datapointtypes channel="CH_Scene">
+          <datapointtype mode="t" name="DPTVimarScene">
+            <groupobject address="0B02"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1013" manufacturer="002C" name="ByMe3IngressiDomoticaBase" type="00BF" version="17">
+          <properties/>
+          <functionalblock channel="CH_Scene" classification="sensor" index="1" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="t" name="DPTVimarScene"/>
+            </groupobjects>
+          </functionalblock>
+        </device>
+      </index>
+      <index index="515" label="Tapp. aperte" number="" room="" type="" zone="">
+        <datapointtypes channel="CH_Scene">
+          <datapointtype mode="t" name="DPTVimarScene">
+            <groupobject address="0B03"/>
+          </datapointtype>
+        </datapointtypes>
+        <device address="1013" manufacturer="002C" name="ByMe3IngressiDomoticaBase" type="00BF" version="17">
+          <properties/>
+          <functionalblock channel="CH_Scene" classification="sensor" index="2" name="ByMePulsanteDomoticaBase">
+            <groupobjects>
+              <datapointtype mode="t" name="DPTVimarScene"/>
+            </groupobjects>
+          </functionalblock>
+        </device>
+      </index>
+    </application>
+    <application id="6" name="Router" offset="577">
+      <index index="577">
+        <datapointtypes channel=""/>
+      </index>
+    </application>
+    <application id="7" name="GSM" offset="578"/>
+    <application id="8" name="USB" offset="579">
+      <index index="579">
+        <datapointtypes channel=""/>
+      </index>
+    </application>
+    <application id="9" name="Diffusione Sonora" offset="0"/>
+    <application id="10" name="Web Server" offset="580">
+      <index index="580">
+        <datapointtypes channel="default"/>
+        <device address="1011" manufacturer="002C" name="ByMeWebServer" type="00A4" version="1">
+          <properties/>
+        </device>
+      </index>
+    </application>
+    <application id="11" name="Programmi Eventi" offset="666">
+      <index index="666">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="667">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="668">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="669">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="670">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="671">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="672">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="673">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="674">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="675">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="676">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="677">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="678">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="679">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="680">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+      <index index="681">
+        <datapointtypes channel="CH_Event">
+          <datapointtype mode="rw" name="SET_EVENT_NAME">
+            <functionproperty field_name="service_id" field_value="0" name="SET_EVENT_NAME" oi="32" pid="96"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_OUTPUT">
+            <functionproperty field_name="service_id" field_value="1" name="DISABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+            <functionproperty field_name="service_id" field_value="0" name="ENABLE_EVENT_OUTPUT" oi="32" pid="99"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_STATE">
+            <functionproperty field_name="service_id" field_value="0" name="START_EVENT" oi="32" pid="97"/>
+            <functionproperty field_name="service_id" field_value="1" name="STOP_EVENT" oi="32" pid="97"/>
+          </datapointtype>
+          <datapointtype mode="rw" name="SET_EVENT_TIMING">
+            <functionproperty field_name="service_id" field_value="3" name="SET_CYCLIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="1" name="SET_EVENT_DAY_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="5" name="SET_PERIODIC_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="4" name="SET_SNOOZE_TIMING" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="0" name="SET_TIMING_TYPE" oi="32" pid="98"/>
+            <functionproperty field_name="service_id" field_value="2" name="SET_WEEKLY_TIMING" oi="32" pid="98"/>
+          </datapointtype>
+        </datapointtypes>
+      </index>
+    </application>
+  </configurator>
+</plant>
